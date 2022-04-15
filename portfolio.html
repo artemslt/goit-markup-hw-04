@@ -7,17 +7,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -33,9 +35,21 @@
         </nav>
         <ul class="nav-contacts">
           <li class="item">
-            <a class="contacts" href="mailto:info@devstudio.com"> mailto:info@devstudio.com</a>
+            <a class="contacts" href="mailto:info@devstudio.com">
+              <svg class="icon-contact" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              mailto:info@devstudio.com</a
+            >
           </li>
-          <li class="item"><a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a class="contacts" href="tel:+380961111111">
+              <svg class="icon-contact" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -124,13 +138,48 @@
     </main>
 
     <footer class="ftr">
-      <div class="container">
-        <a class="logo" href="./index.html"><span class="accent-logo">Web</span>Studio</a>
-        <address class="contact-info">
-          г. Киев, пр-т Леси Украинки, 26
-          <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
-          <a class="contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
+      <div class="container ftr-nav">
+        <div>
+          <a class="logo" href="./index.html"><span class="accent-logo">Web</span>Studio</a>
+          <address class="contact-info">
+            г. Киев, пр-т Леси Украинки, 26
+            <a class="contact-link" href="mailto:info@example.com">info@example.com</a>
+            <a class="contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div class="social-invite">
+          <p class="social-invitr-title">присоединяйтесь</p>
+          <ul class="social-invite-list">
+            <li class="item">
+              <a class="social-invite-link" href="#">
+                <svg class="social-invite-icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="social-invite-link" href="#">
+                <svg class="social-invite-icon" width="20px" height="20px">
+                  <use href="/images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="social-invite-link" href="#">
+                <svg class="social-invite-icon" width="20px" height="20px">
+                  <use href="/images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="social-invite-link" href="#">
+                <svg class="social-invite-icon" width="20px" height="20px">
+                  <use href="/images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
