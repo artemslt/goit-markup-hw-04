@@ -76,8 +76,8 @@ nav .nav-link,
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus,
-.nav-contacts > .item:hover,
-.nav-contacts > .item:focus {
+.contacts:hover,
+.contacts:focus {
   color: var(--accent-blue-color);
 }
 
@@ -159,11 +159,6 @@ nav .nav-link,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.hero > button:hover,
-button:focus {
-  color: var(--main-black-color);
-  background-color: var(--main-white-color);
-}
 
 /* section features */
 .features {
@@ -205,8 +200,11 @@ button:focus {
 }
 
 .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding: 25px 100px;
+
   border-radius: 4px;
   background-color: var(--main-bottun-color);
   margin-bottom: 30px;
@@ -321,16 +319,19 @@ img {
 }
 
 .client-link {
-  display: block;
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+
   color: var(--social-icon-color);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-blue-color);
   border: 1px solid var(--accent-blue-color);
 }
@@ -397,7 +398,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.social-invite-link:hover {
+.social-invite-link:hover,
+.social-invite-link:focus {
   background-color: var(--accent-blue-color);
 }
 .social-invite-list > .item + .item {
